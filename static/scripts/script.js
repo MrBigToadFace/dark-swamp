@@ -31,9 +31,3 @@ function setTheme() {
         localStorage.setItem("theme", "dark");
     }
 }
-
-function soundClick() {
-    var audio = document.getElementById('audio');
-    audio.volume = 0.3;
-    audio.play();
-}
