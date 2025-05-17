@@ -44,16 +44,6 @@
 
 }
 
-.unselectable {
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none;   /* Chrome/Safari/Opera */
-  -khtml-user-select: none;    /* Konqueror */
-  -moz-user-select: none;      /* Firefox */
-  -ms-user-select: none;       /* Internet Explorer/Edge */
-  user-select: none;           /* Non-prefixed version, currently
-                                  not supported by any browser */
-}
-
 .header {
     position: absolute;
     background-color: rgb(130, 140, 81);
@@ -121,19 +111,25 @@
 
 .material-symbols-outlined {
     color: rgb(190, 214, 158);
+    display: inline-block;             
+    line-height: 1;   
     font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 24
-}
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24;
+  }
 
 .theme-button {
-    width: 47px;
+    display: inline-flex;             
+    align-items: center;       
+    justify-content: center;
+    width: 45px;
     height: 45px;
+    border: 3px solid;
     background-color: transparent;
     border-color: darkolivegreen;
-    border-radius: 30px;
+    border-radius: 50%;
     position: relative;
     z-index: 3;
     cursor: pointer;
